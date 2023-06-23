@@ -1,0 +1,4 @@
+server:
+  address: 80
+
+spring:
