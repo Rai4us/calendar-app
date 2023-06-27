@@ -19,6 +19,9 @@
     <properties>
         <java.version>17</java.version>
         <kotlin.version>1.8.21</kotlin.version>
+        <ktorm-version>3.6.0</ktorm-version>
+        <ktor-version>2.3.1</ktor-version>
+        <ktor-jackson-version>1.6.8</ktor-jackson-version>
     </properties>
 
     <dependencies>
@@ -46,9 +49,13 @@
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.liquibase</groupId>-->
+<!--            <artifactId>liquibase-core</artifactId>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
         </dependency>
 
         <dependency>
@@ -61,6 +68,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
